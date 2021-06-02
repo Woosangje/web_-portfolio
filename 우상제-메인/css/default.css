@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@font-face{
+    font-family:"GmarketSansTTFLight";
+    src: url("../css/font/GmarketSansTTFLight.ttf");
+}
+@font-face{
+    font-family:"GmarketSansTTFBold";
+    src: url("../css/font/GmarketSansTTFBold.ttf");
+    font-weight:700;
+}
+@font-face{
+    font-family:"GmarketSansTTFMedium";
+    src: url("../css/font/GmarketSansTTFMedium.ttf");
+}
+.f-gmarketlight{
+    font-family:"GmarketSansTTFLight",sans-serif;
+}
+.f-gmarket{
+    font-family:'GmarketSansTTFMedium',sans-serif;
+}
+.f-gmarketbold{
+    font-family:'GmarketSansTTFBold',sans-serif;
+}
+* {
+    position:relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    outline: none;
+    font-family: 'NanumSquare_ac','initial' , sans-serif;
+    color: #000;
+    line-height: 1.2;
+
+}
+
+
+html,
+body
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width:100vw;
+    
+    
+    font-size:8px;
+    overflow-x:none;
+    
+}
+body{
+    overflow-y:auto;
+}
+img {
+    
+    height: auto;
+    display: block;
+}
+
+ol,
+ul,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    cursor: pointer;
+}
+[type="checkbox"] {
+  /**/   position: absolute;
+   left: -8080em;
+   top:0;
+  }
+
+
+
+
+.is-flex {
+    display: flex;
+    /*float:left를 대신함 정렬을위한 속성값*/
+}
+
+.y-center {
+    align-items: center;
+    /*헤더에사용중
+박스의 높이가 조절된다.
+stretch기본설정 위에배치
+flex-start:위쪽배치
+flex-end:하단배치
+center:가운데배치
+baseline:상단배치된다일단
+*/
+}
+
+.x-between {
+    justify-content: space-between;
+    /*1. flex-start : 기본 설정으로, 플렉스 요소는 플렉스 컨테이너의 앞쪽에서부터 배치됩니다.
+
+2. flex-end : 플렉스 요소는 플렉스 컨테이너의 뒤쪽에서부터 배치됩니다.
+
+3. center : 플렉스 요소는 플렉스 컨테이너의 가운데에서부터 배치됩니다.
+
+4. space-between : 플렉스 요소는 요소들 사이에만 여유 공간을 두고 배치됩니다.
+
+5. space-around : 플렉스 요소는 앞, 뒤, 그리고 요소들 사이에도 모두 여유 공간을 두고 배치됩니다.
+*/
+}
+.x-center{
+    justify-content:center;
+}
+.x-end{
+    justify-content:flex-end;
+}
+
+
+.text-center {
+    text-align: center;
+}
+.text-left{
+    text-align:left;
+}
+.text-right{
+    text-align:right;
+}
+
+.mb-70{
+    margin-bottom:70px;
+}
+.zzz{
+    border:1px solid red;
+}

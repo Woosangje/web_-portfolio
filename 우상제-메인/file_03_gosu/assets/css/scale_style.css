@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@media  screen  and  (max-width:1499px){  
+    .page:nth-of-type(2) .color-circle{
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        font-size:5rem;
+        max-width:200px;
+        width:200px;
+        max-height:200px;
+        height:200px;
+
+    }
+    .page:nth-of-type(2) .color-circle:nth-of-type(1){
+        margin-bottom:131px;
+        
+     }
+     html,body{
+        font-size:6px;
+    }
+ 
+
+
+
+.page:nth-of-type(4) h1{
+    font-size:16rem;
+    color:white;
+}
+.page:nth-of-type(3) .app-list{
+    display:none;
+}
+.page:nth-of-type(3) .app-list-mobile{
+    display:block;
+}
+}
+@media screen and (orientation:portrait) and (max-width:1499px){
+    
+    header img{
+        width:60vw;
+    }
+    .img_store{
+        /*width:700px*/
+        width:45vw;
+        
+    }
+    .page:nth-of-type(1){
+        height:120vh;
+        padding:35vh 4.166vw;
+        display:block;
+    }
+    
+    .page:nth-of-type(1)>.img_store{
+       display:none;
+    }
+    .page:nth-of-type(1)>.y-end{
+       margin:0 auto;
+    }
+
+    .app{
+        /*width:242px; 44*/
+        margin:0 auto;
+        width:30vw;
+    }
+    .page:nth-of-type(2){
+        height:140vh;
+        background:url("../images/redground.svg") no-repeat;
+        background-size:cover;
+        display:flex;
+        align-items: center;
+    }
+    .page:nth-of-type(2)>div{
+        margin-left:4.166vw;
+    }
+    .page:nth-of-type(2) .color-circle{
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        font-size:3.5rem;
+        max-width:30vw;
+        width:30vw;
+        max-height:30vw;
+        height:30vw;
+        border-radius:50%;
+        
+    }
+   
+    .page:nth-of-type(2) .color-circle:nth-of-type(1){
+       margin-bottom:5vh;
+       
+    }
+    .page:nth-of-type(2) .color-value{
+        font-size:3rem;
+        display:flex;
+        margin:2.166vh 0 0 14vw;
+    }
+    .page:nth-of-type(2) .color-value p:nth-child(2){
+        margin-left:10.947vw;
+    }
+
+    
+ 
+
+}
+@media screen and (orientation:portrait) and  (min-width:280px) and  (max-width:660px){
+    
+   
+   
+    .page:nth-of-type(4){
+     
+        height:130vh;
+    }
+    .page:nth-of-type(4) h1{
+        font-size:10rem;
+        margin-bottom:40px;
+        
+    }
+   
+    .page:nth-of-type(4) p{
+        margin-top:2.6315vw;
+        margin-left:6.578vw;
+        font-size: 2.5rem;
+        line-height:1.5;
+        width:80vw;
+    }
+    .page:nth-of-type(4) .box{
+        display:block;
+    }
+}
+
+
+@media  screen and (orientation:portrait) and  (min-width:661px) and  /*세로*/(max-width:1499px){  
+  
+}
+  
+
+@media  screen and (orientation:landscape) and  (min-width:360px) and /*가로*/(max-width:1499px){  
+    header{
+        height:100vh;
+    
+    }
+    header img{
+        width:40vw;
+        /*width:1117px;*/
+        margin:10vh auto;
+    }
+    .img_store{
+        /*width:700px*/
+        width:45vw;
+        
+    }
+    .page:nth-of-type(1){
+        height:120vh;
+       
+    }
+    .page:nth-of-type(1)>.img_store{
+        margin-bottom:0px;
+        border-radius:50%;
+    }
+    .page:nth-of-type(1)>.y-end{
+        margin:0 auto;
+     }
+     
+
+}
+
+@media  screen and (orientation:landscape) and  (min-height:280px) and /*가로*/(max-height:661px){ 
+    header img{
+        width:35vw;
+        /*width:1117px;*/
+        margin:10vh auto;
+    }
+    .img_store{
+        /*width:700px*/
+        width:30vw;
+        
+    }
+    .page:nth-of-type(2){
+        height:280vh;
+        display:flex;
+        align-items: center;
+    }
+    .page:nth-of-type(2)>div{
+        margin-left:100px;
+    }
+    
+    .page:nth-of-type(2) .color-circle:nth-of-type(1){
+       margin-bottom:80px;
+       
+    }
+ 
+      
+    .page:nth-of-type(4) h1{
+        font-size:10rem;
+        margin-bottom:40px;
+        
+    }
+   
+    .page:nth-of-type(4) p{
+        margin-top:2.6315vw;
+        margin-left:6.578vw;
+        font-size: 2.5rem;
+        line-height:1.5;
+        width:80vw;
+    }
+    .page:nth-of-type(4) .box{
+        display:block;
+    }
+}

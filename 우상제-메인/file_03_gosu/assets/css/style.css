@@ -1,0 +1,225 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+    outline: none;
+    font-family: sans-serif;
+    color: #4b4b4b;
+    
+    
+}
+html,
+body
+{
+
+    
+    min-height: 100%;
+    font-size:8px;
+    /*overflow-y:auto;*/
+    margin: 0;
+    overflow-x: hidden;
+    width:100vw;
+    border:0;
+}
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    cursor: pointer;
+}
+[type="checkbox"] {
+     position: absolute;
+   left: -8080em;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.is-flex{
+    display:flex;
+}
+.x-center{
+    display:flex;
+    justify-content: center;
+}
+/**/.x-between{
+    display:flex;
+    justify-content: space-between;
+}
+.y-center{
+    display:flex;
+    align-items:center;
+}
+.y-end{
+    display:flex;
+    align-items:flex-end;
+}
+.ml-44{
+    margin-left:2.315vw;
+}
+
+
+header{
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+header img{
+    width:40vw;
+    /*width:1117px;*/
+    padding-bottom:10vh;
+   
+}
+.wrapper{
+    width:100%;
+    max-width:100%;
+
+}
+.app{
+    /*width:242px; 44*/
+    width:12.73vw;
+}
+
+.zzz {
+    border:1px solid red;
+}
+.page {
+    width:100%;
+}
+.page:nth-of-type(1){
+    height:140vh;
+    padding:35vh 4.166vw;
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+.page:nth-of-type(1)>.img_store{
+    width:34vw;
+    margin-bottom:153px;
+    border-radius:50%;
+}
+.page:nth-of-type(1)>.y-end{
+   margin:0 auto;
+}
+
+.page:nth-of-type(2){
+    height:280vh;
+    background:url("../images/redground.svg") no-repeat;
+    background-size:cover;
+    display:flex;
+    align-items: center;
+}
+.page:nth-of-type(2)>div{
+    margin-left:187px;
+}
+.page:nth-of-type(2) .color-circle{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-size:5rem;
+    max-width:260px;
+    width:260px;
+    max-height:260px;
+    height:260px;
+    border-radius:50%;
+    
+}
+.page:nth-of-type(2) p{
+    color:white;
+}
+.page:nth-of-type(2) .color-circle:nth-of-type(1){
+   margin-bottom:191px;
+   
+}
+
+ .bg-feca28{
+    background-color:#feca28;
+ }
+ .bg-e98d00{
+    background-color:#e98d00;
+ }
+.page:nth-of-type(2) .color-value{
+    font-size:5rem;
+    display:flex;
+    margin:40px 0 0 73px;
+}
+.page:nth-of-type(2) .color-value p:nth-child(2){
+    margin-left:10.947vw;
+}
+
+.page:nth-of-type(3){
+    min-height:140vh;
+}
+.page:nth-of-type(3) .app-list{
+    width:79vw;
+  
+    margin:120px auto;
+}
+.page:nth-of-type(3) .app-list img{
+    width:200px; 
+   
+}
+  
+
+
+.mb-270{
+    margin-bottom:270px;
+}
+.page:nth-of-type(3) .app-list-mobile{
+    width:85vw;
+    margin:80px auto;
+    display:none;
+}
+.page:nth-of-type(3) .app-list-mobile div{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:50px;
+}
+.page:nth-of-type(3) .app-list-mobile img{
+    width:40vw;
+}
+
+
+
+.page:nth-of-type(4){
+    position:relative;
+    background:url("../images/yellowground.svg") no-repeat center;
+    height:200vh;
+    padding:0 4.1666vw;
+    background-size:cover;
+}
+.page:nth-of-type(4) .box{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    display:flex;
+    padding-left:6.578vw;
+}
+.page:nth-of-type(4) h1{
+    font-size:18rem;
+    color:white;
+}
+.page:nth-of-type(4) p{
+    margin-top:4.6315vw;
+    margin-left:6.578vw;
+    font-size: 4rem;
+    line-height:1.5;
+    width:920px;
+}
+
