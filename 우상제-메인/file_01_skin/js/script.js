@@ -22,15 +22,15 @@
 			},5000);		
 			
 			
-		//왼쪽 Leftgnb 코드
-			$(".main").mouseenter(function(){
-					$(this).children(".sub").stop().fadeIn();
-					//$(this).children(".sub").css({opacity:1, display:"block"},200);
+		//왼쪽 nav 코드
+			$(".js-nav-gnb__item").mouseenter(function(){
+					$(this).children(".js-sub-list").stop().fadeIn();
+		
 			});
 				
-			$(".main").mouseleave(function(){
-					$(this).children(".sub").stop().fadeOut();
-					//$(this).children(".sub").css({opacity:0, display:"none"},200);
+			$(".js-nav-gnb__item").mouseleave(function(){
+					$(this).children(".js-sub-list").stop().fadeOut();
+				
 			});
 			//fixed값 고정
 			$(window).resize(function(){
@@ -38,18 +38,18 @@
 				var bb =$(".wrapper").width();
 				var cc = (aa-bb)/2; 
 				
-				//$("#Leftgnb").css("left", cc-100);
+				//$("nav").css("left", cc-100);
 				$(".right").css("left",cc+bb+0);
 			}).resize();
 	
 
-			$(".header h1 a").click(function(){	
+			$(".header .js_header__logo").click(function(){	
 			$('.popup').stop().css("display","inline");
 		
 			return false;
 			});
 			
-			$(".popup ul li").click(function(){	
+			$(".popup .js_popup__link").click(function(){	
 		
 			$('.popup').stop().css("display","none");
 			return false;
@@ -57,9 +57,9 @@
 	
 	/*슬라이드*/
 		setInterval(function(){
-			$(".js_slide2 li:eq(2)").children("img").fadeOut(1000, function(){
-			$(".js_slide2 li:eq(2)").insertBefore(".js_slide2 li:eq(0)");
-			$(".js_slide2 li:eq(0)").children("img").fadeIn();
+			$(".js_slide_02 li:eq(2)").children("img").fadeOut(1000, function(){
+			$(".js_slide_02 li:eq(2)").insertBefore(".js_slide_02 li:eq(0)");
+			$(".js_slide_02 li:eq(0)").children("img").fadeIn();
 		});	
 		},3000);
 

@@ -4,7 +4,8 @@
 
 <head>
 	<meta charset="utf-8" content="text/html">
-	<!--파일 네이밍 규칙은 http://image.kyobobook.co.kr/ink/html/guide/guide_naming.html을 참고 했습니다.-->
+	<!--파일 네이밍 규칙은 http://image.kyobobook.co.kr/ink/html/guide/guide_naming.html 과
+		BEM규칙을 참고 했습니다. -->
 	<meta name="description" content="더조은 피부과">
 	<meta name="keywords" content="HTML, CSS, JavaScript">
 	<meta name="author" content="WOO SANGJE">
@@ -20,7 +21,7 @@
 	<div class="wrapper">
 		<header class="header">
 
-			<a class="header__logo" href="#">
+			<a class="header__logo js_header__logo" href="#">
 				<img src="images/img_headerlogo.jpg" alt="로고 이미지">
 			</a>
 
@@ -35,17 +36,21 @@
 		<div class="container">
 
 			<div class="content_01">
-				<img src="images/mainimage.jpg" alt="mainimage 이미지">
+				<img src="images/background/bg_mainimage.jpg" alt="bg_mainimage 이미지">
 			</div>
 
 
 			<div class="content_02">
 				<ul class="js_slider">
 					<li>
-						<a href="#"><img src="images/img_slide_01.jpg" alt="슬라이드 이미지1"></a>
+						<a href="#">
+							<img src="images/img_slide_01.jpg" alt="슬라이드 이미지1">
+						</a>
 					</li>
 					<li>
-						<a href="#"><img src="images/img_slide_02.jpg" alt="슬라이드 이미지2"></a>
+						<a href="#">
+							<img src="images/img_slide_02.jpg" alt="슬라이드 이미지2">
+						</a>
 					</li>
 				</ul>
 
@@ -53,40 +58,45 @@
 
 
 			<div class="bg-f9f8f6">
-				<ul class="zzz content_03">
+				<ul class="content_03">
 
 					<li class="site1">
-						<iframe width="400" height="220" src="https://youtube.com/embed/3KZC1O4hkn8" frameborder="0"
-							allowfullscreen></iframe>
+						<iframe width="400" height="220" src="https://youtube.com/embed/3KZC1O4hkn8" frameborder="0" allowfullscreen></iframe>
 					</li>
 					<li class="site2">
 						<a href="https://www.youtube.com/">
-							<img src="images/img_youtube2.jpg" alt="유튜브2 이미지"></a>
+							<img src="images/img_youtube2.jpg" alt="유튜브2 이미지">
+						</a>
 					</li>
 					<li class="site3">
 						<a href="https://www.youtube.com/">
-							<img src="images/img_youtube3.jpg" alt="유튜브3 이미지"></a>
+							<img src="images/img_youtube3.jpg" alt="유튜브3 이미지">
+						</a>
 					</li>
 					<li class="site4">
 						<a href="https://www.youtube.com/">
-							<img src="images/img_youtube4.jpg" alt="유튜브4 이미지"></a>
+							<img src="images/img_youtube4.jpg" alt="유튜브4 이미지">
+						</a>
 					</li>
 
 				</ul>
 				<!--main1-->
 				<div class="content_04">
-					<div>Premium De-aging, Tj</div>
-					<h1>프리미엄 디에이징,더조은</h1>
+					<h1 class="title">Premium De-aging, Tj</h1>
+					<h2 class="subtitle">프리미엄 디에이징,더조은</h2>
 
-					<div class="grayinside">
-						<ul class="imgwrap">
-							<li> 첨단 안티에이징</li>
-							<li>개개인에 적합한 프로그램을<br> 정품 장비,정량 사용을 원칙으로<br> 알맞은 시술 진행</li>
-						</ul>
-						<!--GuideText"-->
+					<div class="content_04__box">
+						<div class="box-left">
+							<p class="box__title"> 첨단 안티에이징</p>
+							<p class="box__desc">
+								개개인에 적합한 프로그램을<br> 
+								정품 장비,정량 사용을 원칙으로<br> 
+								알맞은 시술 진행</p>
+						</div>
 
-						<div class="slider2 ">
-							<ul class="zzz js_slide2">
+
+						<div class="slider02 ">
+							<ul class="slide_02 js_slide_02">
 								<li><img src="images/img_youtube_slider01.jpg"></li>
 								<li><img src="images/img_youtube_slider02.jpg"></li>
 								<li><img src="images/img_youtube_slider03.jpg"></li>
@@ -99,7 +109,7 @@
 
 				<div class=" content_05">
 
-					
+
 					<div class="content__left">
 						<div class="box_title ">
 							<p class="subtitle">BEST REVIEW</p>
@@ -114,10 +124,10 @@
 						</div>
 						<div class="box_slide js_view_01">
 							<ul class="img_wrap">
-								<li><img src="images/img_content05_01.jpg" alt=""></li>
-								<li><img src="images/img_content05_02.jpg" alt=""></li>
-								<li><img src="images/img_content05_03.jpg" alt=""></li>
-								<li><img src="images/img_content05_01.jpg" alt=""></li>
+								<li><img src="images/img_content05_01.jpg" alt="슬라이드 이미지 01"></li>
+								<li><img src="images/img_content05_02.jpg" alt="슬라이드 이미지 02"></li>
+								<li><img src="images/img_content05_03.jpg" alt="슬라이드 이미지 03"></li>
+								<li><img src="images/img_content05_01.jpg" alt="슬라이드 이미지 04"></li>
 							</ul>
 						</div>
 					</div>
@@ -151,55 +161,87 @@
 
 			</div>
 			<!--end bg-f9f8f6-->
-			<!--footer시작-->
+			
 
-			<div class="footer">
-				<div class="Navi"><img src="images/Navigation.jpg" alt="Navigation 이미지"></div>
+			<footer class="footer">
+				<div class="footer__content">
+					<img class="img-navigation" src="images/background/bg_Navigation.jpg" alt="navigation 이미지">
+				</div>
 				<!--지도-->
-				<div class="Move"><img src="images/MarkUp.png" alt="MarkUp 이미지"></div>
+				<div class="footer__mark">
+					<img src="images/img_MarkUp.png" alt="MarkUp 이미지">
+				</div>
 				<!--용인점-->
 
-			</div>
-			<!--footer끝-->
+			</footer>
+			<!--end footer-->
 
 			<!--팝업창 시작-->
 			<div class="popup">
 				<ul>
-					<li><a href="#"> </a></li>
+					<li>
+						<a class="popup__link js_popup__link close_01" href="#"> </a>
+					</li>
 					<!--오늘은그만볼래요-->
-					<li><a href="#"></a></li>
+					<li>
+						<a class="popup__link js_popup__link close_02" href="#"></a>
+					</li>
 					<!--닫기-->
 				</ul>
 			</div>
-			<!--팝업 닫기버튼을 이미지로제작해버림-->
+			<!-- end popup-->
+			<aside class="aside">
+				<ul>
+					<li class="aside__item">
+						<a href="#">
+							<div class=" aside__icon aside__icon_01"></div>
+							<p class="info">온라인 상담</p>
+						</a>
+					</li>
+					<li class="aside__item">
+						<a href="#">
+							<div class=" aside__icon aside__icon_02"></div>
+							<p class="info">카톡 상담</p>
+						</a>
+					</li>
+					<li class="aside__item">
+						<a href="#">
+							<div class=" aside__icon aside__icon_03"></div>
+							<p class="info">비용 상담</p>
+						</a>
+					</li>
+					<li class="aside__item">
+						<a href="#">
+							<div class="aside__icon aside__icon_04"></div>
+							<p class="info">오시는 길</p>
+						</a>
+					</li>
+					<li class="aside__item">
+						<a href="#">
+							<div class="aside__icon aside__icon_05"></div>
+							<p class="info">전화상담</p>
+							<p class="info">02-543-7714</p>
+						</a>
+					</li>
+				</ul>
+				<p class="aside__time-info">
+					10:00~7:00<br><br>
+					야간(화,금)<br>
+					10:00~20:00<br><br>
+					토요일<br>
+					10:00~16:00<br><br>
+					일요일,공휴일<br>
+					휴지
+				</p>
 
-			<aside>
-				<div class="right">
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-					<p>
-						평일<br>
-						10:00~7:00<br><br>
-						야간(화,금)<br>
-						10:00~20:00<br><br>
-						토요일<br>
-						10:00~16:00<br><br>
-						일요일,공휴일<br>
-						휴지
-					</p>
 
-				</div>
-				<!--Right끝-->
+			</aside>
 
-				<ul class="leftgnb">
-					<li class="main">
+			<nav class="nav-gnb">
+				<ul class="nav-gnb__list">
+					<li class="nav-gnb__item js-nav-gnb__item">
 						<a href="#">피부과 소개</a>
-						<ul class="sub">
+						<ul class="sub-list js-sub-list">
 							<li>병원소개</li>
 							<li>의료진소개</li>
 							<li>진료시간/병원안내</li>
@@ -211,9 +253,9 @@
 					</li>
 					<!--main1-->
 
-					<li class="main">
+					<li class="nav-gnb__item js-nav-gnb__item">
 						<a href="#">울트라센터</a>
-						<ul class="sub">
+						<ul class="sub-list js-sub-list">
 							<li>써마지쿼트로</li>
 							<li>써마지FLX</li>
 							<li>인모드</li>
@@ -224,9 +266,9 @@
 					</li>
 					<!--main2-->
 
-					<li class="main">
+					<li class="nav-gnb__item js-nav-gnb__item">
 						<a href="#">디아에어징센터</a>
-						<ul class="sub">
+						<ul class="sub-list js-sub-list">
 							<li>써마지쿼드로</li>
 							<li>써마지FLX</li>
 							<li>인모드</li>
@@ -237,9 +279,9 @@
 					</li>
 					<!--main3-->
 
-					<li class="main">
+					<li class="nav-gnb__item js-nav-gnb__item">
 						<a href="#">동안/필러센터</a>
-						<ul class="sub">
+						<ul class="sub-list js-sub-list">
 							<li>더조은 디자인필러</li>
 							<li>더조운 컨투어링 윤곽주사</li>
 							<li>더조운 볼빛주사</li>
@@ -250,9 +292,9 @@
 					</li>
 					<!--main4-->
 
-					<li class="main">
+					<li class="nav-gnb__item js-nav-gnb__item">
 						<a href="#">브라이트닝센터</a>
-						<ul class="sub">
+						<ul class="sub-list js-sub-list">
 							<li>탄력브라이트닝</li>
 							<li>브라이트닝 프로그램</li>
 							<li>더조은 프리미엄 토닝 </li>
@@ -264,9 +306,9 @@
 					</li>
 					<!--main5-->
 
-					<li class="main">
+					<li class="nav-gnb__item js-nav-gnb__item">
 						<a href="#">메디컬스키 케어센터</a>
-						<ul class="sub">
+						<ul class="sub-list js-sub-list">
 							<li>골드테라피</li>
 							<li>생크림필</li>
 							<li>IU광채케어 </li>
@@ -279,9 +321,9 @@
 					</li>
 					<!--main6-->
 
-					<li class="main">
+					<li class="nav-gnb__item js-nav-gnb__item">
 						<a href="#">상담/전후사진</a>
-						<ul class="sub">
+						<ul class="sub-list js-sub-list">
 							<li>온라인상담</li>
 							<li>시술후기</li>
 							<li>리얼셀피 </li>
@@ -290,26 +332,63 @@
 					</li>
 					<!--main6-->
 
-					<ul class="hrefGroup">
-						<li><a class="left" href="#"><img src="images/LeftFace.png"></a></li>
-						<li><a class="left" href="#"><img src="images/LeftCafe.png"></a></li>
-						<li><a class="left" href="#"><img src="images/LeftBlog.png"></a></li>
+					<ul class="hrefGroup nav-gnb__list_02">
+						<li>
+							<a class="left" href="#">
+								<img src="images/icon/small_sns/icon_small_facebook.png">
+							</a>
+						</li>
+						<li>
+							<a class="left" href="#">
+								<img src="images/icon/small_sns/icon_small_cafe.png">
+							</a>
+						</li>
+						<li>
+							<a class="left" href="#">
+								<img src="images/icon/small_sns/icon_small_blog.png">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icon/small_sns/icon_small_logo.png">
+								병원
+							</a>
+						</li>
 
-						<li><a href="#"><img src="images/LeftLogo.png">병원</a></li>
-						<li><a href="#"><img src="images/LeftLogo.png">치과</a></li>
-						<li><a href="#"><img src="images/LeftLogo.png">구강막안면외과</a></li>
-						<li><a href="#"><img src="images/LeftLogo.png">슬리핑센터</a></li>
-						<li><a href="#"><img src="images/LeftLogo.png">IDAZ</a></li>
+						<li>
+							<a href="#">
+								<img src="images/icon/small_sns/icon_small_logo.png">
+								치과
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icon/small_sns/icon_small_logo.png">
+								구강막안면외과
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icon/small_sns/icon_small_logo.png">
+								슬리핑센터
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icon/small_sns/icon_small_logo.png">
+								DAZ
+							</a>
+						</li>
 					</ul>
-					<!--hrefGroup-->
+					<!--end hrefGroup-->
 				</ul>
-				<!--Leftaside-->
+				<!--end nav-gnb__list-->
+			</nav>
 
-			</aside>
 		</div>
-		<!--content-->
+		<!--end container-->
 	</div>
-	<!--wrapper-->
+	<!--end wrapper-->
 </body>
 
 </html>
