@@ -47,21 +47,27 @@ img {
 }
 
 .is-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display:flex;
 }
-.x-center{
+.x-between{
+    display: -webkit-box;
+    display: -ms-flexbox;   
     display:flex;
-    justify-content: center;
-}
-/**/.x-between{
-    display:flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;  
     justify-content: space-between;
 }
 .y-center{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display:flex;
     align-items:center;
 }
 .y-end{
+    -webkit-box-align: start;
+    -ms-flex-align: start;    
     display:flex;
     align-items:flex-end;
 }
@@ -73,10 +79,14 @@ img {
 header{
     height:100vh;
     width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display:flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
-header img{
+header .logo{
     width:40vw;
     /*width:1117px;*/
     padding-bottom:10vh;
@@ -101,8 +111,14 @@ header img{
 .page:nth-of-type(1){
     height:140vh;
     padding:35vh 4.166vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display:flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items:flex-end;
 }
 
@@ -119,15 +135,25 @@ header img{
     height:280vh;
     background:url("../images/redground.svg") no-repeat;
     background-size:cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display:flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .page:nth-of-type(2)>div{
     margin-left:187px;
 }
 .page:nth-of-type(2) .color-circle{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display:flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items:center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;   
     justify-content: center;
     font-size:5rem;
     max-width:260px;
@@ -153,6 +179,8 @@ header img{
  }
 .page:nth-of-type(2) .color-value{
     font-size:5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display:flex;
     margin:40px 0 0 73px;
 }
@@ -165,7 +193,6 @@ header img{
 }
 .page:nth-of-type(3) .app-list{
     width:79vw;
-  
     margin:120px auto;
 }
 .page:nth-of-type(3) .app-list img{
@@ -185,7 +212,11 @@ header img{
 }
 .page:nth-of-type(3) .app-list-mobile div{
     width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display:flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom:50px;
 }
@@ -208,6 +239,8 @@ header img{
     top:50%;
     transform:translate(-50%,-50%);
     width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display:flex;
     padding-left:6.578vw;
 }

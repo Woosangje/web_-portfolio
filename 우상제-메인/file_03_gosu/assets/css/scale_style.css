@@ -36,7 +36,7 @@
 }
 @media screen and (orientation:portrait) and (max-width:1499px){
     
-    header img{
+    header .logo{
         width:60vw;
     }
     .img_store{
@@ -139,7 +139,7 @@
         height:100vh;
     
     }
-    header img{
+    header .logo{
         width:40vw;
         /*width:1117px;*/
         margin:10vh auto;
@@ -165,7 +165,7 @@
 }
 
 @media  screen and (orientation:landscape) and  (min-height:280px) and /*가로*/(max-height:661px){ 
-    header img{
+    header .logo{
         width:35vw;
         /*width:1117px;*/
         margin:10vh auto;

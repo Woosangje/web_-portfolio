@@ -79,11 +79,15 @@ label {
 
 
 .is-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /*float:left를 대신함 정렬을위한 속성값*/
 }
 
 .y-center {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: center;
     /*헤더에사용중
 박스의 높이가 조절된다.
@@ -96,6 +100,8 @@ baseline:상단배치된다일단
 }
 
 .x-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     /*1. flex-start : 기본 설정으로, 플렉스 요소는 플렉스 컨테이너의 앞쪽에서부터 배치됩니다.
 
@@ -109,9 +115,13 @@ baseline:상단배치된다일단
 */
 }
 .x-center{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     justify-content:center;
 }
 .x-end{
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     justify-content:flex-end;
 }
 
@@ -128,7 +138,4 @@ baseline:상단배치된다일단
 
 .mb-70{
     margin-bottom:70px;
-}
-.zzz{
-    border:1px solid red;
 }
